@@ -1,0 +1,33 @@
+{
+  "name": "goit-js-hw-11",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://syniepolskyi.github.io/goit-js-hw-11",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /goit-js-hw-11/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syniepolskyi/goit-js-hw-11"
+  },
+  "keywords": [],
+  "author": "Ihor Syniepolskyi <syniepolskyi@yahoo.com>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "*",
+    "modern-normalize": "^1.1.0",
+    "notiflix": "*",
+    "simplelightbox": "*"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "buffer": "^6.0.3",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "parcel-transformer-hbs": "*",
+    "posthtml-include": "^1.7.4",
+    "process": "^0.11.10"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
