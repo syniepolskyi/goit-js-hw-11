@@ -104,7 +104,7 @@ function load(){
         }
         renderGallery(responseData.data.hits)
         loadMoreBtn.classList.toggle('is-hidden', !(responseData.data.total > perPage))
-        if(page === 1){
+        if(!simpleLightBox){
             simpleLightBox = new SimpleLightbox('.gallery a')
         } else {
             simpleLightBox.refresh()
