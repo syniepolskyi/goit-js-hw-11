@@ -35,10 +35,6 @@ function onSubmit(ev){
         return
     }
     q = inputRef.value.trim()
-    if(simpleLightBox){
-        simpleLightBox.destroy()
-        simpleLightBox = null
-    }
     loadMoreBtn.classList.add('is-hidden')
     loading.classList.remove('show')
     galleryRef.innerHTML = ''
@@ -108,9 +104,11 @@ function load(){
         }
         renderGallery(responseData.data.hits)
         loadMoreBtn.classList.toggle('is-hidden', !(responseData.data.total > perPage))
-        setTimeout(() => {
-            simpleLightBox = new SimpleLightbox('.gallery a').refresh()
-        },50)
+        if(page === 1){
+            simpleLightBox = new SimpleLightbox('.gallery a')
+        } else {
+            simpleLightBox.refresh()
+        }
     })
     .catch(error => {
         Notify.failure("Something bad happened. Check the browser console")
