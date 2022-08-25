@@ -1,4 +1,4 @@
-# goit-js-hw-11 .. У ПРОЦЕСІ
+# goit-js-hw-11 - The Last with Vanilla JS
 
 # Критерії приймання
 

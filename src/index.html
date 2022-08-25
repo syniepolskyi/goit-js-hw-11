@@ -6,20 +6,32 @@
     <title>Image search</title>
     <link rel="icon" href="./images/myself.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./sass/index.scss" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <form class="search-form" id="search-form">
-      <input
-        type="text"
-        name="searchQuery"
-        autocomplete="off"
-        placeholder="Search images..."
-      />
-      <button type="submit">Search</button>
-    </form>
-
-    <div class="gallery"></div>
-    <!-- include src="./partials/example.html"></include -->
+    <div class="search-container">
+      <form class="search-form" id="search-form">
+          <input 
+          type="text" 
+          name="searchQuery" 
+          autocomplete="off" 
+          placeholder="Search images..." />
+          <button type="submit">
+              <span class="material-icons">search</span></button>
+      </form>
+  </div>
+  
+  <div class="gallery-container">
+      <div class="gallery"></div>
+      <button type="button" class="btn-load-more is-hidden">Load more</button>
+      <a class="btn-to-top" title="Return to top"> <span class="material-icons">arrow_upward</span></a>
+  </div>
+  
+  <div class="loading">
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+  </div>
   </body>
 </html>
