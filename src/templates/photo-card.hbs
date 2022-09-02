@@ -1,17 +1,15 @@
-<div class="photo-card">
-  <img src="" alt="" loading="lazy" />
+<a class="gallery__link" href="{{this.largeImageURL}}">
+  <div class="photo-card" id={{this.id}}>
+  <img class="photo-card__img" src="{{this.webformatURL}}" alt="{{this.tags}}" loading="lazy" />
   <div class="info">
     <p class="info-item">
-      <b>Likes</b>
-    </p>
+    <b>Likes</b>{{this.likes}}</p>
     <p class="info-item">
-      <b>Views</b>
-    </p>
+    <b>Views</b>{{this.views}}</p>
     <p class="info-item">
-      <b>Comments</b>
-    </p>
+    <b>Comments</b>{{this.comments}}</p>
     <p class="info-item">
-      <b>Downloads</b>
-    </p>
+    <b>Downloads</b>{{this.downloads}}</p>
   </div>
-</div>
+  </div>
+</a>
