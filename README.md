@@ -2,6 +2,9 @@
 
 ## Installation command line instruction
 
+node version: `14.18.3`
+npm version: `8.5.5`
+
 ```
 npm i
 npm start
